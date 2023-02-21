@@ -1,6 +1,9 @@
 'use strict';
 console.log('practice.js file was loaded');
 
+//
+const outputEl = document.getElementById('app');
+
 const numArray = [5, 15, -2, 0, -5, 7];
 console.log('numArray ===', numArray);
 // 1. atrinkti teigiamas reiksmes i nauja masyva
@@ -59,6 +62,7 @@ const makeFirstCappital = (strToBeTransformed) => {
 };
 const didSer = makeFirstCappital('serbentautas');
 console.log('didSer ===', didSer);
+printToHtml(didSer);
 
 function addH3ToHtml(str) {
   // sukurti h3 elementa
@@ -74,9 +78,21 @@ function addH3ToHtml(str) {
 addH3ToHtml('lape');
 addH3ToHtml('serbentautas');
 
+function printToHtml(str) {
+  const h2El = document.createElement('h2');
+  h2El.textContent = str;
+  outputEl.append(h2El);
+}
+
 // 4. `
 const proverb =
   'sesi eina po penkiu, bet tuo paciu sesi eina pries septynis. Ir sesi yra trisdesim sesi padalinta is sesiu';
+printToHtml(proverb);
 
 //   1. pakeisti pirma 'sesi' i '6' replace()
+const oneSesi = proverb.replace('sesi', 6);
+printToHtml(oneSesi);
 //   2. pakeisti visus 'sesi' i 'six' replace(//)
+// const allSesi = proverb.replaceAll('sesi', 'six');
+const allSesi = proverb.replaceAll(/sesi/g, 'six');
+printToHtml(allSesi);
