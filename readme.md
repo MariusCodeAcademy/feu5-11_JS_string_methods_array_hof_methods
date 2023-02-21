@@ -36,3 +36,9 @@ const numArray = [5, 15, -2, 0, -5, 7];
 
 7. medziaga https://javascript.info/modifying-document#insertion-methods
    isiaiskinti kaip veikia iterpimo metodai iki DocumentFragment temos
+
+8. const colors = ['red', 'green', 'blue', 'tomato'];
+
+   1. is colors array grazinti nauja masyva su visu spalvu raidziu kiekiais
+
+   2. is colors grazinti nauja masyva kuriame pries spalva butu prirasytas indexas.
