@@ -15,7 +15,7 @@ console.log('----');
 skArr.forEach((sk, idx, arr) => {
   console.log(`index: ${idx}, skaicius ${sk}`);
   const dviguba = sk * 2;
-  arr[idx] = dviguba;
+  // arr[idx] = dviguba;
 });
 console.log('skArr po dvigubo ===', skArr);
 
@@ -31,6 +31,51 @@ function triple(oneNum) {
 
 // psiaudo kodas
 // sukurti kibirelio kintamaji
+let total = 0;
 // sukukti cikla
-/// jo metu deti i kibireli reikmes
+skArr.forEach((sk) => {
+  /// jo metu deti i kibireli reikmes
+  total += sk;
+});
 // po ciklu kibirelyje bus suma
+console.log('total ===', total);
+
+// atrinkti i nauja masyva reiksmes didesnes uz 4
+const moreThanFourArr = [];
+skArr.forEach((sk) => {
+  if (sk >= 4) {
+    moreThanFourArr.push(sk);
+  }
+});
+console.log('moreThanFourArr ===', moreThanFourArr);
+
+// suskaiciuoti kiek masyve yra lyginiu skaiciu
+// parasyti funkcija kuri grazina kiek masyve yra lyginiu skaiciu
+
+function howManyLyginiai() {
+  // susikurti kibireli
+  let lyginiuRadau = 0;
+  // sukti cikla
+  skArr.forEach((sk) => {
+    // tikrinti surasti ar sk yra lyginis
+    if (sk % 2 === 0) {
+      console.log('lyginis ===', sk);
+      /// jei TAIP - tai deti vieneta i kibireli
+      lyginiuRadau++;
+    }
+  });
+  console.log('lyginiuRadau ===', lyginiuRadau);
+  return lyginiuRadau;
+}
+howManyLyginiai();
+
+//     <ul id="numListUl">
+// norim atspausdinti visu li el reikmes
+const ulEl = document.getElementById('numListUl');
+const liEls = ulEl.querySelectorAll('li');
+console.log('liEls ===', liEls);
+
+liEls.forEach((singleLiEl) => {
+  console.log('singleLiEl.textContent ===', singleLiEl.textContent);
+  singleLiEl.textContent = `Item ${singleLiEl.textContent}`;
+});
