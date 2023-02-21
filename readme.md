@@ -42,3 +42,11 @@ const numArray = [5, 15, -2, 0, -5, 7];
    1. is colors array grazinti nauja masyva su visu spalvu raidziu kiekiais
 
    2. is colors grazinti nauja masyva kuriame pries spalva butu prirasytas indexas.
+
+   3. parasyti funkcija kuri grazina nauja masyva su objektais
+      [
+      {value: 'red'},
+      {value: 'green'},
+      {value: 'blue'}
+      ...
+      ]
