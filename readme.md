@@ -31,4 +31,8 @@ const numArray = [5, 15, -2, 0, -5, 7];
      <li>one</li>
    </ul>
    ```
+
    prideti kiekvienam elementui zodeli ' was' gale ir klase 'tomato' `<li class="tomato">one was</li>`
+
+7. medziaga https://javascript.info/modifying-document#insertion-methods
+   isiaiskinti kaip veikia iterpimo metodai iki DocumentFragment temos
