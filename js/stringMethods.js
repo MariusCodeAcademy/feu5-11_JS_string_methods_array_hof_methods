@@ -58,3 +58,41 @@ console.log('lastLetter ===', lastLetter);
 console.log('lastLetterStr3 ===', lastLetterStr3);
 
 // su charAt arba slice parasyti funkcija kuri atspausdina ir grazina str4 stringa su prima diziaja raide. 'The lazy'
+
+function makeStingCapital() {
+  const fl = str4.charAt(0);
+  const likesString = str4.slice(1);
+  const result = fl.toUpperCase() + likesString;
+  console.log('result ===', result);
+  return result;
+}
+makeStingCapital();
+
+// const makeFirstCappital = (str) => {
+//   return str.charAt(0).toUpperCase() + str.slice(1);
+// };
+
+const makeFirstCappital = (str) => str.charAt(0).toUpperCase() + str.slice(1);
+
+console.log(makeFirstCappital(str3));
+
+// String.prototype.search('ko ieskom'); - grazina pozicija arba -1 jei neranda
+//                    10        20
+//      012345678901234567890123456789
+str1 = 'Brown fox jumped over the lazy dog fox.';
+console.log('str1 ===', str1);
+
+// rasti indexa zodzio 'over'
+
+const overPosition = str1.search('over');
+console.log('overPosition ===', overPosition);
+
+// String.prototype.trim() - pasalina tuscius tarpus is kaires ir desines
+
+const str5 = '      helllo     ';
+console.log('str5 ===', str5);
+console.log('str5.length ===', str5.length);
+
+const str5Trimmed = str5.trim();
+console.log('str5Trimmed ===', str5Trimmed);
+console.log('str5Trimmed.length ===', str5Trimmed.length);
