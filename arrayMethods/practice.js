@@ -73,3 +73,10 @@ function addH3ToHtml(str) {
 }
 addH3ToHtml('lape');
 addH3ToHtml('serbentautas');
+
+// 4. `
+const proverb =
+  'sesi eina po penkiu, bet tuo paciu sesi eina pries septynis. Ir sesi yra trisdesim sesi padalinta is sesiu';
+
+//   1. pakeisti pirma 'sesi' i '6' replace()
+//   2. pakeisti visus 'sesi' i 'six' replace(//)
